@@ -1,20 +1,15 @@
 
 PRAGMA foreign_keys = ON;
 
-INSERT INTO category (categoryId, categoryName, categoryImage) VALUES
-(1, 'Fantasy', 'fantasy-category.jpg'),
-(2, 'Classics', 'classics-category.jpg'),
-(3, 'Science Fiction', 'science-fiction-category.jpg'),
-(4, 'Modern Bestsellers', 'modern-bestsellers-category.jpg');
+INSERT INTO movie (movieId, categoryId, title, director, imdbId, price, image, watchNow) VALUES
+(1, 1, 'The Notebook', 'Nick Cassavetes', 'tt0332280', 14.99, 'the-notebook.jpg', 1),
+(2, 1, 'A Walk to Remember', 'Adam Shankman', 'tt0281358', 12.99, 'a-walk-to-remember.jpg', 0),
+(3, 1, 'Crazy Rich Asians', 'Jon M. Chu', 'tt3104988', 16.50, 'crazy-rich-asians.jpg', 1),
+(4, 1, '50 First Dates', 'Peter Segal', 'tt0343660', 13.99, '50-first-dates.jpg', 0),
+(5, 1, 'Love Actually', 'Richard Curtis', 'tt0314331', 15.99, 'love-actually.jpg', 1),
 
-INSERT INTO book (bookId, categoryId, title, author, isbn, price, image, readNow) VALUES
-(1, 1, 'Harry Potter and the Sorcerer''s Stone', 'J. K. Rowling', '9780590353427', 19.99, 'harry-potter-1.jpg', 1),
-(2, 1, 'Harry Potter and the Chamber of Secrets', 'J. K. Rowling', '9780439064873', 20.99, 'harry-potter-2.jpg', 0),
-(3, 1, 'The Hobbit', 'J. R. R. Tolkien', '9780547928227', 18.50, 'the-hobbit.jpg', 1),
-(4, 2, 'Dream of the Red Chamber', 'Cao Xueqin', '9780140442939', 17.99, 'dream-of-the-red-chamber.jpg', 0),
-(5, 2, 'Journey to the West', 'Wu Cheng''en', '9787119016634', 21.99, 'journey-to-the-west.jpg', 1),
-(6, 2, 'Pride and Prejudice', 'Jane Austen', '9780141439518', 12.99, 'pride-and-prejudice.jpg', 0),
-(7, 3, 'The Three-Body Problem', 'Liu Cixin', '9780765377067', 18.99, 'three-body-problem.jpg', 1),
-(8, 3, 'The Dark Forest', 'Liu Cixin', '9780765386694', 19.99, 'the-dark-forest.jpg', 0),
-(9, 4, 'The Little Prince', 'Antoine de Saint-Exupery', '9780156012195', 11.99, 'the-little-prince.jpg', 1),
-(10, 4, 'To Live', 'Yu Hua', '9781400031863', 15.99, 'to-live.jpg', 1);
+(6, 2, 'The Bourne Identity', 'Doug Liman', 'tt0258463', 17.99, 'bourne-identity.jpg', 1),
+(7, 2, 'The Bourne Supremacy', 'Paul Greengrass', 'tt0372183', 18.99, 'bourne-supremacy.jpg', 0),
+(8, 2, 'Black Hawk Down', 'Ridley Scott', 'tt0265086', 16.99, 'black-hawk-down.jpg', 1),
+(9, 2, 'Spider-Man', 'Sam Raimi', 'tt0145487', 15.50, 'spiderman-2002.jpg', 0),
+(10, 2, 'The Fast and the Furious', 'Rob Cohen', 'tt0232500', 14.50, 'fast-and-furious-2001.jpg', 1);
