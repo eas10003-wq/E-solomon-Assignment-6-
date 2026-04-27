@@ -3,6 +3,8 @@ PRAGMA foreign_keys = ON;
 INSERT INTO category (categoryId, categoryName, categoryImage) VALUES
 (1, 'Romance', 'romance.jpg'),
 (2, 'Action', 'action.jpg');
+(3, 'Science', 'science.jpg'),
+(4, 'History', 'history.jpg');
 
 INSERT INTO book (bookId, categoryId, title, author, isbn, price, image, readNow) VALUES
 (1, 1, 'The Notebook', 'Nicholas Sparks', '9780446605236', 14.99, 'the-notebook.jpg', 1),
@@ -16,3 +18,6 @@ INSERT INTO book (bookId, categoryId, title, author, isbn, price, image, readNow
 (8, 2, 'Black Hawk Down', 'Mark Bowden', '9780802143389', 16.99, 'black-hawk-down.jpg', 1),
 (9, 2, 'Spider-Man', 'Stan Lee', '9780785131799', 15.50, 'spiderman-2002.jpg', 0),
 (10, 2, 'The Fast and the Furious', 'Ken Li', '9780000000003', 14.50, 'fast-and-furious-2001.jpg', 1);
+(11, 3, 'A Brief History of Time', 'Stephen Hawking', '9780553380163', 15.99, 'time.jpg', 1),
+(12, 4, 'Sapiens', 'Yuval Noah Harari', '9780062316097', 18.99, 'sapiens.jpg', 1);
+
