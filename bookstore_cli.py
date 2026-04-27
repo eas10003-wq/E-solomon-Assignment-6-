@@ -1,7 +1,9 @@
+DB_NAME = "/Applications/bookstore.db"
 
-import sqlite3 
+import sqlite3
 
-DB_NAME = "bookstore.db"
+connection = sqlite3.connect("/Applications/bookstore.db")
+cursor = connection.cursor()
 
 
 def print_divider() -> None:
@@ -255,6 +257,8 @@ def main():
         connection.execute("PRAGMA foreign_keys = ON;")
         run_menu(connection)
 
-
 if __name__ == "__main__":
-    main(
+    main()
+
+    import sqlite3
+
